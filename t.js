@@ -330,7 +330,7 @@ const data = [
 
 
 
-// console.log(data.Compare(data.name,data.name));
+console.log(data.Compare(data.name,data.name));
 
 
 // console.log(data);
