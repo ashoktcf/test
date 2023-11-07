@@ -324,13 +324,9 @@ const data = [
 // console.log(DescZ_A());
 // console.log(Asc0_9());
 // console.log(Desc9_0());
+console.log(DescZ_A().map((a)=>a.name).filter((a)=>a=="Patricia Lebsack"));
 
-
-// console.log(DescZ_A().map((a)=>a.name).filter((a)=>a=="Patricia Lebsack"));
-
-
-
-console.log(data.Compare(data.name,data.name));
+// console.log(data.Compare(data.name,data.name));
 
 
 // console.log(data);
