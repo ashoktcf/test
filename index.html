@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sample Data Table</title>
+    <style>
+        #bg1 {
+            margin: 2px;
+            height: 50px;
+            width: 600px;
+            background-color: black;
+            color: white;
+        }
+
+        .button {
+            margin: 2px;
+            position: relative;
+            margin-left: 500px;
+            height: 50px;
+            width: 40px;
+            padding: 10px 20px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <button onclick="dataGet()">get</button>
+    <button onclick="dataCreate()">create</button>
+    <button onclick="dataDelete()">delete</button>
+
+    <div>
+        <p id="sampleTable"></p>
+    </div>
+
+
+    <script>
+        const data = [
+            { name: "John Doe", age: 30, city: "New York" },
+            { name: "Jane Smith", age: 25, city: "Los Angeles" },
+            { name: "Bob Johnson", age: 35, city: "Chicago" },
+        ];
+        const tableBody = document.getElementById("sampleTable");
+        function dataGet() {
+            for (let i = 0; i <= data.length - 1; i++) {
+                tableBody.innerHTML += `
+          <div id="innerline"> 
+             <p id="bg1">${data[i].name} ${data[i].age} ${data[i].name}
+              <span class="button" >edit</span>
+              </p> 
+         </div>`
+            }
+        }
+        function dataDelete() {
+            tableBody.innerHTML = null;
+
+        }
+
+
+    </script>
+</body>
+
+</html>
